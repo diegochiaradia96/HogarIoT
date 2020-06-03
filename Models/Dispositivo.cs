@@ -17,7 +17,7 @@ namespace HogarIoT
 
         public Estado Estado { get; set; }
 
-        public void CambiarEstado (TipoEstado estado)
+        public void CambiarEstado (string estado)
         {
             this.Estado.DescripcionEstado = estado;
         }

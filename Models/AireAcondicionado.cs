@@ -11,7 +11,7 @@ namespace HogarIoT
         public int Temperatura { get; set; }
         public Modo Modo { get; set; }
 
-        public void CambiarModo (TipoModo modo)
+        public void CambiarModo (string modo)
         {
             this.Modo.DescripcionModo = modo;
         }

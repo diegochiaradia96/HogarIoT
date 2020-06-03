@@ -29,80 +29,61 @@ namespace HogarIoT.Context
             optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;DataBase=HogarDB;Trusted_Connection=true");
 
         }
-    }
-        //AQUI PONER EL METODO ONMODEL CREATING
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Estado>().HasData(
-        //        new Estado
-        //        {
-        //            EstadoID = 1,
-        //            DescripcionEstado = "ENCENDIDO"
+        //METODO ONMODEL CREATING
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //ENUM ESTADO
+            modelBuilder.Entity<Estado>().HasData(
+                new Estado
+                {
+                    IdEstado = 1,
+                    DescripcionEstado = "ENCENDIDO"
+                },
 
-        //        },
-        //        new Photo
-        //        {
-        //            PhotoID = 2,
-        //            Title = "Orchard",
-        //            Description = "This was taken on a sunny fall day.",
-        //            PhotoFileName = "orchard.jpg",
-        //            ImageMimeType = "image/jpeg",
-        //            CreatedDate = DateTime.Today
-        //        },
-        //        new Photo
-        //        {
-        //            PhotoID = 3,
-        //            Title = "Blackberries",
-        //            Description = "This was late for blackberries so they are a little past their best.",
-        //            PhotoFileName = "blackberries.jpg",
-        //            ImageMimeType = "image/jpeg",
-        //            CreatedDate = DateTime.Today
-        //        },
-        //        new Photo
-        //        {
-        //            PhotoID = 4,
-        //            Title = "Ripples",
-        //            Description = "Interesting reflections and colors in this marine shot.",
-        //            PhotoFileName = "ripples.jpg",
-        //            ImageMimeType = "image/jpeg",
-        //            CreatedDate = DateTime.Today
-        //        },
-        //        new Photo
-        //        {
-        //            PhotoID = 5,
-        //            Title = "View Along a Path",
-        //            Description = "The light was great through the trees so I had to stop and take this.",
-        //            PhotoFileName = "path.jpg",
-        //            ImageMimeType = "image/jpeg",
-        //            CreatedDate = DateTime.Today
-        //        },
-        //        new Photo
-        //        {
-        //            PhotoID = 6,
-        //            Title = "Headland View",
-        //            Description = "A beautiful view on a beautiful day.",
-        //            PhotoFileName = "headland.jpg",
-        //            ImageMimeType = "image/jpeg",
-        //            CreatedDate = DateTime.Today
-        //        },
-        //        new Photo
-        //        {
-        //            PhotoID = 7,
-        //            Title = "Fungi",
-        //            Description = "Found a fugi During a walk in the forest.",
-        //            PhotoFileName = "fungi.jpg",
-        //            ImageMimeType = "image/jpeg",
-        //            CreatedDate = DateTime.Today
-        //        });
-//        }
-//    }
-//}
-//    }
-//}
+                new Estado
+                {
+                    IdEstado = 2,
+                    DescripcionEstado = "APAGADO"
+                },
+
+                new Estado
+                {
+                    IdEstado = 3,
+                    DescripcionEstado = "SIN_CONEXION"
+                });
+
+            //ENUM MODO
+            modelBuilder.Entity<Modo>().HasData(
+               new Modo
+               {
+                   IdModo = 1,
+                   DescripcionModo = "AUTO"
+               },
+
+               new Modo
+               {
+                   IdModo = 2,
+                   DescripcionModo = "CALOR"
+               },
+
+               new Modo
+               {
+                   IdModo = 3,
+                   DescripcionModo = "FRIO"
+               },
+
+               new Modo
+               {
+                   IdModo = 4,
+                   DescripcionModo = "VENTILACION"
+               });
+        }
+    }    
+}
 
 
 
-        
+
 
 

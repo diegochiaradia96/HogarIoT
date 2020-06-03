@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200603174242_HogarIoTDB.cs" />
+    <Compile Remove="Migrations\20200603174242_HogarIoTDB.Designer.cs" />
+    <Compile Remove="Migrations\20200603174823_HogarDB.cs" />
+    <Compile Remove="Migrations\20200603174823_HogarDB.Designer.cs" />
+    <Compile Remove="Migrations\20200603175203_HogarIoTDB1.cs" />
+    <Compile Remove="Migrations\20200603175203_HogarIoTDB1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />

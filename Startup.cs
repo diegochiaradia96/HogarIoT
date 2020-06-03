@@ -30,13 +30,13 @@ namespace HogarIoT
         public void ConfigureServices(IServiceCollection services)
         {
             // ESTO ES LO QUE AGREGAMOS NOSOTROS PARA CONECTAR LA BASE DE DATOS
-         services.AddControllers().AddNewtonsoftJson();
-          services.AddControllers().AddNewtonsoftJson(options =>
-          {options.SerializerSettings.ContractResolver = new DefaultContractResolver();});
+            services.AddControllers().AddNewtonsoftJson();
+            services.AddControllers().AddNewtonsoftJson(options =>
+            {options.SerializerSettings.ContractResolver = new DefaultContractResolver();});
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddDbContext<HogarDataBaseContext>(options => options.UseSqlServer(Configuration["ConnectionString:HogarDBConnection"]));
-           // services.AddMvc();
+            // services.AddMvc();
             services.AddMvc().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore)
             .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             

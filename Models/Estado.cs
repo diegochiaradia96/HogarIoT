@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using System.Text;        
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 namespace HogarIoT
 {
     public class Estado
     {
-        public int EstadoID { get; set; }
-        public String DescripcionEstado { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdEstado { get; set; }
+        public string DescripcionEstado { get; set; }
     }
-   // public TipoEstado DescripcionEstado { get; set; }
+    
+    //CASO ANTERIOR
+    // public TipoEstado DescripcionEstado { get; set; }
     ////public enum TipoEstado
     //{
     //    ENCENDIDO, APAGADO, SIN_CONEXION
