@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fmcam\\source\\repos\\HogarIoT\\HogarIoT.csproj": {}
+    "C:\\Users\\ariel\\Desktop\\HogarIoT\\HogarIoT\\HogarIoT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fmcam\\source\\repos\\HogarIoT\\HogarIoT.csproj": {
+    "C:\\Users\\ariel\\Desktop\\HogarIoT\\HogarIoT\\HogarIoT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fmcam\\source\\repos\\HogarIoT\\HogarIoT.csproj",
+        "projectUniqueName": "C:\\Users\\ariel\\Desktop\\HogarIoT\\HogarIoT\\HogarIoT.csproj",
         "projectName": "HogarIoT",
-        "projectPath": "C:\\Users\\fmcam\\source\\repos\\HogarIoT\\HogarIoT.csproj",
-        "packagesPath": "C:\\Users\\fmcam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fmcam\\source\\repos\\HogarIoT\\obj\\",
+        "projectPath": "C:\\Users\\ariel\\Desktop\\HogarIoT\\HogarIoT\\HogarIoT.csproj",
+        "packagesPath": "C:\\Users\\ariel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ariel\\Desktop\\HogarIoT\\HogarIoT\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fmcam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ariel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,11 +54,19 @@
               "target": "Package",
               "version": "[3.1.4, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -79,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
