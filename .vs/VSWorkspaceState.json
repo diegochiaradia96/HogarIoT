@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Context"
+    "\\BD",
+    "\\Context",
+    "\\Controllers",
+    "\\Views",
+    "\\Views\\Shared"
   ],
-  "SelectedNode": "\\Context\\HogarDataBaseContext.cs",
+  "SelectedNode": "\\Controllers\\DispositivoController.cs",
   "PreviewInSolutionExplorer": false
 }
