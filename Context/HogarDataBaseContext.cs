@@ -37,19 +37,19 @@ namespace HogarIoT.Context
             modelBuilder.Entity<Estado>().HasData(
                 new Estado
                 {
-                    ESTADOID = 1,
+                    EstadoID = 1,
                     DescripcionEstado = "ENCENDIDO"
                 },
 
                 new Estado
                 {
-                    ESTADOID = 2,
+                    EstadoID = 2,
                     DescripcionEstado = "APAGADO"
                 },
 
                 new Estado
                 {
-                    ESTADOID = 3,
+                    EstadoID = 3,
                     DescripcionEstado = "SIN_CONEXION"
                 });
 
@@ -57,25 +57,25 @@ namespace HogarIoT.Context
             modelBuilder.Entity<Modo>().HasData(
                new Modo
                {
-                   MODOID = 1,
+                   ModoID = 1,
                    DescripcionModo = "AUTO"
                },
 
                new Modo
                {
-                   MODOID = 2,
+                   ModoID = 2,
                    DescripcionModo = "CALOR"
                },
 
                new Modo
                {
-                   MODOID = 3,
+                   ModoID = 3,
                    DescripcionModo = "FRIO"
                },
 
                new Modo
                {
-                   MODOID = 4,
+                   ModoID = 4,
                    DescripcionModo = "VENTILACION"
                });
         }

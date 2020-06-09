@@ -12,7 +12,7 @@ namespace HogarIoT
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MODOID { get; set; }
+        public int ModoID { get; set; }
         public string DescripcionModo { get; set; }
     }
 
