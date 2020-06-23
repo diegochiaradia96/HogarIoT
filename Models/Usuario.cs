@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 namespace HogarIoT
 {
     public class Usuario
     {
-        //public int Id_User { get; set; }??????????
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string NombreUsuario { get; set; }
+
+        [Required]
         public string Contrasenia { get; set; }
+
+        [Required]
         public List<Dispositivo> Dispositivos { get; set; }
 
     }

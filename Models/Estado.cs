@@ -13,6 +13,8 @@ namespace HogarIoT
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EstadoID { get; set; }
+        
+        [Required]
         public string DescripcionEstado { get; set; }
     }
     
