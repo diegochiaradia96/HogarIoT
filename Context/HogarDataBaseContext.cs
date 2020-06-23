@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using HogarIoT.Models;
 using System.Text;
-using HogarIoT;
 
 namespace HogarIoT.Context
 
@@ -83,11 +82,5 @@ namespace HogarIoT.Context
 
         //METODO ONMODEL CREATING
         public DbSet<HogarIoT.Usuario> Usuario { get; set; }
-    }    
+    }
 }
-
-
-
-
-
-
