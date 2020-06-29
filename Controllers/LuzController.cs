@@ -54,7 +54,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Intensidad,Id,Nombre")] Luz luz)
+        public async Task<IActionResult> Create([Bind("Intensidad,Id,Nombre,Estado")] Luz luz)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Intensidad,Id,Nombre")] Luz luz)
+        public async Task<IActionResult> Edit(int id, [Bind("Intensidad,Id,Nombre,Estado")] Luz luz)
         {
             if (id != luz.Id)
             {

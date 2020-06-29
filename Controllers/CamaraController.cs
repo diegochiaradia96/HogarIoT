@@ -54,7 +54,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Grabar,Id,Nombre")] Camara camara)
+        public async Task<IActionResult> Create([Bind("Grabar,Id,Nombre,Estado")] Camara camara)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Grabar,Id,Nombre")] Camara camara)
+        public async Task<IActionResult> Edit(int id, [Bind("Grabar,Id,Nombre,Estado")] Camara camara)
         {
             if (id != camara.Id)
             {

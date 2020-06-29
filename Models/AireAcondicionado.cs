@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace HogarIoT
 {
     public class AireAcondicionado : Dispositivo
     {
+        [Required]
+        [Range(16, 30, ErrorMessage = "Rango de temperatura: 16° a 30°")]
         public int Temperatura { get; set; }
-        public Modo Modo { get; set; }
 
-        public void CambiarModo (string modo)
-        {
-            this.Modo.DescripcionModo = modo;
-        }
+        [Required]
+
+        public Modo Modo { get; set; }
     }
 }

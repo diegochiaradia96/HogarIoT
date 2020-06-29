@@ -54,7 +54,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Temperatura,Id,Nombre")] AireAcondicionado aireAcondicionado)
+        public async Task<IActionResult> Create([Bind("Temperatura,Modo,Id,Nombre,Estado")] AireAcondicionado aireAcondicionado)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Temperatura,Id,Nombre")] AireAcondicionado aireAcondicionado)
+        public async Task<IActionResult> Edit(int id, [Bind("Temperatura,Modo,Id,Nombre,Estado")] AireAcondicionado aireAcondicionado)
         {
             if (id != aireAcondicionado.Id)
             {

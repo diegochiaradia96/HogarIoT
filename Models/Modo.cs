@@ -8,21 +8,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HogarIoT
 {
-    public class Modo
+    public enum Modo
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ModoID { get; set; }
+        [Display(Name = "Automatico")]
+        AUTO = 0,
 
-        [Required]
-        [StringLength(20)]
-        public string DescripcionModo { get; set; }
+        [Display(Name = "Frio")]
+        FRIO = 1,
+
+        [Display(Name = "Calor")]
+        CALOR = 2,
+
+        [Display(Name = "Ventilacion")]
+        VENTILACIÓN = 3
     }
-
-    //CASO ANTERIOR
-    //public TipoModo DescripcionModo { get; set; }
-    //public enum TipoModo
-    //{
-    //    AUTO, FRIO, CALOR, VENTILACIÓN
-    //}
 }

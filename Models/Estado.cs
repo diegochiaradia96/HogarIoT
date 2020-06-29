@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;        
+using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,21 +8,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HogarIoT
 {
-    public class Estado
+
+
+   
+    public enum Estado
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int EstadoID { get; set; }
+        [Display(Name = "Encendido")]
+        ENCENDIDO = 0,
 
-        [Required]
-        [StringLength(20)]
-        public string DescripcionEstado { get; set; }
+        [Display(Name = "Apagado")]
+        APAGADO = 1,
+
+        [Display(Name = "Sin Connexion")]
+        SIN_CONEXION = 2
     }
-
-    //CASO ANTERIOR
-    // public TipoEstado DescripcionEstado { get; set; }
-    ////public enum TipoEstado
-    //{
-    //    ENCENDIDO, APAGADO, SIN_CONEXION
-    //}
 }

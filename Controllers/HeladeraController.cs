@@ -54,7 +54,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TempHeladera,TempFreezer,Id,Nombre")] Heladera heladera)
+        public async Task<IActionResult> Create([Bind("TempHeladera,TempFreezer,Id,Nombre,Estado")] Heladera heladera)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace HogarIoT.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TempHeladera,TempFreezer,Id,Nombre")] Heladera heladera)
+        public async Task<IActionResult> Edit(int id, [Bind("TempHeladera,TempFreezer,Id,Nombre,Estado")] Heladera heladera)
         {
             if (id != heladera.Id)
             {
